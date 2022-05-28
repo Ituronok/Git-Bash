@@ -1,0 +1,62 @@
+Homework 1_Terminal_Git Bash
+1. Посмотреть, где я
+Pwd
+2. Создать папку
+mkdir QA
+3. Зайти в папку
+cd QA
+4. Создать 3 папки (создание вложенных папок)
+mkdir -p QA1/QA2/QA3
+5. Зайти в любую папку
+Cd QA1
+6. Создать 5 файлов (3 txt, 2 json)
+touch file1.txt file2.txt file3.txt file4.json file5.json
+7. Создать 3 папки (создание 3х независимых папок)
+mkdir foulder1 foulder2 foulder3
+8. Вывести список содержимого папки
+ls
+9-11. Открыть любой txt файл
+-	Cat file1.txt (вывести содержимое файла)
+-	Vim file1.txt  file1.txt  I  ввести новый текст  Esc :wq
+-	Cat >> file1.txt  ввести новый текст  Enter  Ctrl+C
+12. Выйти из папки на уровень выше
+cd ..
+13. Переместить любые 2 файла, которые вы создали, в любую другую папку
+mv file1.txt file2.txt QA2/
+14. Скопировать любые 2 файла, которые вы создали, в любую другую папку
+cp file3.txt file4.json QA2/
+15. Найти файл по имени
+find -name "file3.txt"
+16.Просмотреть содержимое в реальном времени 
+tail -f file2.txt
+17. вывести несколько первых строк из текстового файла
+head -n3 file2.txt
+
+18. вывести несколько последних строк из текстового файла
+tail -3 file2.txt
+19. просмотреть содержимое длинного файла (команда less) изучите как она работает
+less file2.txt
+20. вывести дату и время
+Date
+21. Отправить http запрос на сервер 
+curl http://162.55.220.72:5005/terminal-hw-request
+“http://162.55.220.72:5005/get_method?name=Irina&age=27”
+ 
+22. Написать скрипт
+    1) Touch test.bat
+    2) Cat >> test.bat
+    (#!/bin/bash
+    cd QA1
+    mkdir Study1 Study2 Study3
+    cd Study1
+    touch file1.txt file2.txt file3.txt file4.json file5.json
+    mkdir A B C
+    ls
+    mv file1.txt file2.txt A/) 
+    Enter
+    Ctrl+C
+    3) chmod u+x test.bat
+    4) ./test.bat
+
+
+
